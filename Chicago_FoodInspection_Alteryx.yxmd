@@ -1,0 +1,1222 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="17" y="39" width="1032" height="471" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Chicago_Food_Inspection</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="42" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>4000</FieldLen>
+                <SingleThreadRead>True</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>True</QuoteRecordBreak>
+                <CodePage>65001</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Food_Inspections.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Inspection ID" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="V_WString" />
+                <Field name="DBA Name" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="V_WString" />
+                <Field name="AKA Name" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="V_WString" />
+                <Field name="License #" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="V_WString" />
+                <Field name="Facility Type" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="V_WString" />
+                <Field name="Risk" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="V_WString" />
+                <Field name="Address" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="V_WString" />
+                <Field name="City" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="V_WString" />
+                <Field name="State" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="V_WString" />
+                <Field name="Zip" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="V_WString" />
+                <Field name="Inspection Date" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="V_WString" />
+                <Field name="Inspection Type" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="V_WString" />
+                <Field name="Results" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="V_WString" />
+                <Field name="Violations" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="V_WString" />
+                <Field name="Latitude" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="V_WString" />
+                <Field name="Longitude" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="V_WString" />
+                <Field name="Location" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="222" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Inspection ID" selected="True" />
+                <SelectField field="DBA Name" selected="True" />
+                <SelectField field="AKA Name" selected="True" />
+                <SelectField field="License #" selected="True" />
+                <SelectField field="Facility Type" selected="True" />
+                <SelectField field="Risk" selected="True" />
+                <SelectField field="Address" selected="True" />
+                <SelectField field="City" selected="True" />
+                <SelectField field="State" selected="True" />
+                <SelectField field="Zip" selected="True" />
+                <SelectField field="Inspection Date" selected="True" />
+                <SelectField field="Inspection Type" selected="True" />
+                <SelectField field="Results" selected="True" />
+                <SelectField field="Violations" selected="True" />
+                <SelectField field="Latitude" selected="True" />
+                <SelectField field="Longitude" selected="True" />
+                <SelectField field="Location" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="126" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields>
+                <Field field="Inspection ID" selected="True" />
+                <Field field="DBA Name" selected="True" />
+                <Field field="AKA Name" selected="True" />
+                <Field field="License #" selected="True" />
+                <Field field="Facility Type" selected="True" />
+                <Field field="Risk" selected="True" />
+                <Field field="Address" selected="True" />
+                <Field field="City" selected="True" />
+                <Field field="State" selected="True" />
+                <Field field="Zip" selected="True" />
+                <Field field="Inspection Date" selected="True" />
+                <Field field="Inspection Type" selected="True" />
+                <Field field="Results" selected="True" />
+                <Field field="Violations" selected="True" />
+                <Field field="Latitude" selected="True" />
+                <Field field="Longitude" selected="True" />
+                <Field field="Location" selected="True" />
+                <Field field="*Unknown" selected="True" />
+              </Fields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Inspection ID" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="Int32" />
+                <Field name="DBA Name" size="79" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="V_String" />
+                <Field name="AKA Name" size="79" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="V_String" />
+                <Field name="License #" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="Int32" />
+                <Field name="Facility Type" size="47" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="V_String" />
+                <Field name="Risk" size="15" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="String" />
+                <Field name="Address" size="51" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="V_String" />
+                <Field name="City" size="20" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="V_String" />
+                <Field name="State" size="2" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="String" />
+                <Field name="Zip" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="Int32" />
+                <Field name="Inspection Date" size="10" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="String" />
+                <Field name="Inspection Type" size="41" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="V_String" />
+                <Field name="Results" size="20" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="V_String" />
+                <Field name="Violations" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="V_String" />
+                <Field name="Latitude" size="18" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="String" />
+                <Field name="Longitude" size="18" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="String" />
+                <Field name="Location" size="40" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Food_Inspections.tsv" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="486" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="19" type="DateTime" />
+                <FormulaField expression="[Engine.WorkflowFileName]" field="DI_WorkflowFileName" size="255" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[DI_CreateDate = DateTimeNow()
+DI_WorkflowFileName = [Engine.WorkflowFileName]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="918" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:ssms|||chicago.Stg_Chicago</File>
+              <Passwords />
+              <CachedCosmeticName />
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Overwrite</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:ssms
+Query=chicago.Stg_Chicago</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="605" y="88" width="293" height="397" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Chicago_FoodInspection_DataProfiling</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="9">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+                <Position x="630" y="137" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Limit_UniqueCount>10000</Limit_UniqueCount>
+                  <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+                  <IsMetric value="False" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+            </Node>
+            <Node ToolID="10">
+              <GuiSettings>
+                <Position x="630" y="342" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Value name="Select Fields">Inspection ID=True,DBA Name=True,AKA Name=True,License #=True,Facility Type=True,Risk=True,Address=True,City=True,State=True,Zip=True,Inspection Date=True,Inspection Type=True,Results=True,Violations=True,Latitude=True,Longitude=True,Location=True,DI_CreateDate=True,DI_WorkflowFileName=True</Value>
+                  <Value name="Sample Data">False</Value>
+                  <Value name="Number">True</Value>
+                  <Value name="NNumber">5000</Value>
+                  <Value name="Percent">False</Value>
+                  <Value name="NPercent">10</Value>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+            </Node>
+            <Node ToolID="11">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="750" y="138" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\Users\ronak\AppData\Local\Temp\Engine_2472_2a90e01732122846af813c05719fd932_\Engine_2472_6a16a336ce15e6458761b0f0339a65d8~.yxdb</TempFile>
+                  <TempFileDataProfiling />
+                  <Layout>
+                    <ViewMode>Single</ViewMode>
+                    <ViewSize value="100" />
+                    <View1>
+                      <DefaultTab>Profile</DefaultTab>
+                      <Hints>
+                        <Table />
+                      </Hints>
+                    </View1>
+                    <View2 />
+                  </Layout>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+            <Node ToolID="12">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="714" y="282" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\Users\ronak\AppData\Local\Temp\Engine_2472_2a90e01732122846af813c05719fd932_\Engine_2472_2c234a044f9fa94aacfbbc49be6af386~.yxdb</TempFile>
+                  <TempFileDataProfiling />
+                  <Layout>
+                    <ViewMode>Single</ViewMode>
+                    <ViewSize value="100" />
+                    <View1>
+                      <DefaultTab>Report</DefaultTab>
+                      <Hints>
+                        <Table />
+                      </Hints>
+                    </View1>
+                    <View2 />
+                  </Layout>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+            <Node ToolID="13">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="750" y="342" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\Users\ronak\AppData\Local\Temp\Engine_2472_2a90e01732122846af813c05719fd932_\Engine_2472_8a9e28f1dfb2de4b8ecf10a240bd95b7~.yxdb</TempFile>
+                  <TempFileDataProfiling />
+                  <Layout>
+                    <ViewMode>Single</ViewMode>
+                    <ViewSize value="100" />
+                    <View1>
+                      <DefaultTab>Report</DefaultTab>
+                      <Hints>
+                        <Table />
+                      </Hints>
+                    </View1>
+                    <View2 />
+                  </Layout>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+            <Node ToolID="14">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="714" y="402" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\Users\ronak\AppData\Local\Temp\Engine_2472_2a90e01732122846af813c05719fd932_\Engine_2472_189b562708c15f478ec3f4a2bcdfc2c4~.yxdb</TempFile>
+                  <TempFileDataProfiling />
+                  <Layout>
+                    <ViewMode>Single</ViewMode>
+                    <ViewSize value="100" />
+                    <View1>
+                      <DefaultTab>Report</DefaultTab>
+                      <Hints>
+                        <Table />
+                      </Hints>
+                    </View1>
+                    <View2 />
+                  </Layout>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="402" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="318" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>Inspection Date</InputFieldName>
+              <Language>English</Language>
+              <Format />
+              <OutputFieldName>Modified_Inspection_Date</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert Inspection Date From:
+Custom</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="29" y="532" width="1548" height="471" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Chicago_Business</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="54" y="726" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>4000</FieldLen>
+                <SingleThreadRead>True</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>True</QuoteRecordBreak>
+                <CodePage>65001</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Business_Licenses.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ID" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LICENSE ID" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="ACCOUNT NUMBER" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="SITE NUMBER" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LEGAL NAME" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="DOING BUSINESS AS NAME" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="ADDRESS" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="CITY" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="STATE" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="ZIP CODE" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="WARD" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="PRECINCT" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="WARD PRECINCT" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="POLICE DISTRICT" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LICENSE CODE" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LICENSE DESCRIPTION" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="BUSINESS ACTIVITY ID" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="BUSINESS ACTIVITY" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LICENSE NUMBER" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="APPLICATION TYPE" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="APPLICATION CREATED DATE" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="APPLICATION REQUIREMENTS COMPLETE" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="PAYMENT DATE" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="CONDITIONAL APPROVAL" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LICENSE TERM START DATE" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LICENSE TERM EXPIRATION DATE" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LICENSE APPROVED FOR ISSUANCE" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="DATE ISSUED" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LICENSE STATUS" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LICENSE STATUS CHANGE DATE" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="SSA" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LATITUDE" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LONGITUDE" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+                <Field name="LOCATION" size="4000" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="149" y="726" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields>
+                <Field field="ID" selected="True" />
+                <Field field="LICENSE ID" selected="True" />
+                <Field field="ACCOUNT NUMBER" selected="True" />
+                <Field field="SITE NUMBER" selected="True" />
+                <Field field="LEGAL NAME" selected="True" />
+                <Field field="DOING BUSINESS AS NAME" selected="True" />
+                <Field field="ADDRESS" selected="True" />
+                <Field field="CITY" selected="True" />
+                <Field field="STATE" selected="True" />
+                <Field field="ZIP CODE" selected="True" />
+                <Field field="WARD" selected="True" />
+                <Field field="PRECINCT" selected="True" />
+                <Field field="WARD PRECINCT" selected="True" />
+                <Field field="POLICE DISTRICT" selected="True" />
+                <Field field="LICENSE CODE" selected="True" />
+                <Field field="LICENSE DESCRIPTION" selected="True" />
+                <Field field="BUSINESS ACTIVITY ID" selected="True" />
+                <Field field="BUSINESS ACTIVITY" selected="True" />
+                <Field field="LICENSE NUMBER" selected="True" />
+                <Field field="APPLICATION TYPE" selected="True" />
+                <Field field="APPLICATION CREATED DATE" selected="True" />
+                <Field field="APPLICATION REQUIREMENTS COMPLETE" selected="True" />
+                <Field field="PAYMENT DATE" selected="True" />
+                <Field field="CONDITIONAL APPROVAL" selected="True" />
+                <Field field="LICENSE TERM START DATE" selected="True" />
+                <Field field="LICENSE TERM EXPIRATION DATE" selected="True" />
+                <Field field="LICENSE APPROVED FOR ISSUANCE" selected="True" />
+                <Field field="DATE ISSUED" selected="True" />
+                <Field field="LICENSE STATUS" selected="True" />
+                <Field field="LICENSE STATUS CHANGE DATE" selected="True" />
+                <Field field="SSA" selected="True" />
+                <Field field="LATITUDE" selected="True" />
+                <Field field="LONGITUDE" selected="True" />
+                <Field field="LOCATION" selected="True" />
+                <Field field="*Unknown" selected="False" />
+              </Fields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ID" size="16" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="String" />
+                <Field name="LICENSE ID" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="Int32" />
+                <Field name="ACCOUNT NUMBER" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="Int32" />
+                <Field name="SITE NUMBER" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="Int16" />
+                <Field name="LEGAL NAME" size="117" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_String" />
+                <Field name="DOING BUSINESS AS NAME" size="128" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_String" />
+                <Field name="ADDRESS" size="80" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_String" />
+                <Field name="CITY" size="30" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_String" />
+                <Field name="STATE" size="2" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="String" />
+                <Field name="ZIP CODE" size="5" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="String" />
+                <Field name="WARD" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="Byte" />
+                <Field name="PRECINCT" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="Int16" />
+                <Field name="WARD PRECINCT" size="6" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="String" />
+                <Field name="POLICE DISTRICT" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="Byte" />
+                <Field name="LICENSE CODE" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="Int16" />
+                <Field name="LICENSE DESCRIPTION" size="60" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_String" />
+                <Field name="BUSINESS ACTIVITY ID" size="81" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_String" />
+                <Field name="BUSINESS ACTIVITY" size="735" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_String" />
+                <Field name="LICENSE NUMBER" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="Int32" />
+                <Field name="APPLICATION TYPE" size="6" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="String" />
+                <Field name="APPLICATION CREATED DATE" size="10" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_String" />
+                <Field name="APPLICATION REQUIREMENTS COMPLETE" size="10" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="String" />
+                <Field name="PAYMENT DATE" size="10" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="String" />
+                <Field name="CONDITIONAL APPROVAL" size="1" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="String" />
+                <Field name="LICENSE TERM START DATE" size="10" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="String" />
+                <Field name="LICENSE TERM EXPIRATION DATE" size="10" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="String" />
+                <Field name="LICENSE APPROVED FOR ISSUANCE" size="10" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="String" />
+                <Field name="DATE ISSUED" size="10" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="String" />
+                <Field name="LICENSE STATUS" size="3" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="String" />
+                <Field name="LICENSE STATUS CHANGE DATE" size="10" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="V_String" />
+                <Field name="SSA" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="Byte" />
+                <Field name="LATITUDE" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="Double" />
+                <Field name="LONGITUDE" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="Double" />
+                <Field name="LOCATION" size="40" source="File: C:\Users\ronak\Desktop\Fall 2022\DADABI\Assignments\Group\Chicago\Business_Licenses.tsv" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1110" y="726" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="19" type="DateTime" />
+                <FormulaField expression="[Engine.WorkflowFileName]" field="DI_WorkflowFileName" size="255" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[DI_CreateDate = DateTimeNow()
+DI_WorkflowFileName = [Engine.WorkflowFileName]
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1446" y="726" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">aka:ssms|||chicago.Stg_ChicagoBusiness</File>
+              <Passwords />
+              <CachedCosmeticName />
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Overwrite</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>aka:ssms
+Query=chicago.Stg_ChicagoBusiness</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="28">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="1181" y="581" width="255" height="397" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Chicago_Business_DataProfiling</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="22">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+                <Position x="1206" y="630" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Limit_UniqueCount>10000</Limit_UniqueCount>
+                  <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+                  <IsMetric value="False" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+            </Node>
+            <Node ToolID="23">
+              <GuiSettings>
+                <Position x="1206" y="834" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Value name="Select Fields">ADDRESS=True,CITY=True,STATE=True,LATITUDE=True,LONGITUDE=True,LOCATION=True,DI_CreateDate=True,DI_WorkflowFileName=True</Value>
+                  <Value name="Sample Data">False</Value>
+                  <Value name="Number">True</Value>
+                  <Value name="NNumber">5000</Value>
+                  <Value name="Percent">False</Value>
+                  <Value name="NPercent">10</Value>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+            </Node>
+            <Node ToolID="24">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="1302" y="630" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\Users\ronak\AppData\Local\Temp\Engine_2472_2a90e01732122846af813c05719fd932_\Engine_2472_98cef5b7d35a6542a8960a54ed61238e~.yxdb</TempFile>
+                  <TempFileDataProfiling />
+                  <Layout>
+                    <ViewMode>Single</ViewMode>
+                    <ViewSize value="100" />
+                    <View1>
+                      <DefaultTab>Profile</DefaultTab>
+                      <Hints>
+                        <Table />
+                      </Hints>
+                    </View1>
+                    <View2 />
+                  </Layout>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+            <Node ToolID="25">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="1302" y="774" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\Users\ronak\AppData\Local\Temp\Engine_2472_2a90e01732122846af813c05719fd932_\Engine_2472_a1eaf119bb96a64db3fa44ccd22b3ac2~.yxdb</TempFile>
+                  <TempFileDataProfiling />
+                  <Layout>
+                    <ViewMode>Single</ViewMode>
+                    <ViewSize value="100" />
+                    <View1>
+                      <DefaultTab>Report</DefaultTab>
+                      <Hints>
+                        <Table />
+                      </Hints>
+                    </View1>
+                    <View2 />
+                  </Layout>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+            <Node ToolID="26">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="1302" y="834" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\Users\ronak\AppData\Local\Temp\Engine_2472_2a90e01732122846af813c05719fd932_\Engine_2472_d83f0f90baa85749aa4cd809a5cfd32a~.yxdb</TempFile>
+                  <TempFileDataProfiling />
+                  <Layout>
+                    <ViewMode>Single</ViewMode>
+                    <ViewSize value="100" />
+                    <View1>
+                      <DefaultTab>Report</DefaultTab>
+                      <Hints>
+                        <Table />
+                      </Hints>
+                    </View1>
+                    <View2 />
+                  </Layout>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+            <Node ToolID="27">
+              <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+                <Position x="1302" y="894" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <TempFile>C:\Users\ronak\AppData\Local\Temp\Engine_2472_2a90e01732122846af813c05719fd932_\Engine_2472_d1a57ea6e50bec4ea75a1d69232c7e6e~.yxdb</TempFile>
+                  <TempFileDataProfiling />
+                  <Layout>
+                    <ViewMode>Single</ViewMode>
+                    <ViewSize value="100" />
+                    <View1>
+                      <DefaultTab>Report</DefaultTab>
+                      <Hints>
+                        <Table />
+                      </Hints>
+                    </View1>
+                    <View2 />
+                  </Layout>
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+              <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="31">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="246" y="726" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1014" y="726" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="ID" selected="True" />
+                <SelectField field="LICENSE ID" selected="True" />
+                <SelectField field="ACCOUNT NUMBER" selected="True" />
+                <SelectField field="SITE NUMBER" selected="True" />
+                <SelectField field="LEGAL NAME" selected="True" />
+                <SelectField field="DOING BUSINESS AS NAME" selected="True" />
+                <SelectField field="ADDRESS" selected="True" />
+                <SelectField field="CITY" selected="True" />
+                <SelectField field="STATE" selected="True" />
+                <SelectField field="ZIP CODE" selected="True" />
+                <SelectField field="WARD" selected="True" />
+                <SelectField field="PRECINCT" selected="True" />
+                <SelectField field="WARD PRECINCT" selected="True" />
+                <SelectField field="POLICE DISTRICT" selected="True" />
+                <SelectField field="LICENSE CODE" selected="True" />
+                <SelectField field="LICENSE DESCRIPTION" selected="True" />
+                <SelectField field="BUSINESS ACTIVITY ID" selected="True" />
+                <SelectField field="BUSINESS ACTIVITY" selected="True" />
+                <SelectField field="LICENSE NUMBER" selected="True" />
+                <SelectField field="APPLICATION TYPE" selected="True" />
+                <SelectField field="APPLICATION REQUIREMENTS COMPLETE" selected="True" />
+                <SelectField field="CONDITIONAL APPROVAL" selected="True" />
+                <SelectField field="LICENSE STATUS" selected="True" />
+                <SelectField field="SSA" selected="True" />
+                <SelectField field="LATITUDE" selected="True" />
+                <SelectField field="LONGITUDE" selected="True" />
+                <SelectField field="LOCATION" selected="True" />
+                <SelectField field="Modified_Application_Created_Date" selected="True" />
+                <SelectField field="Modified_PAYMENT_DATE" selected="True" />
+                <SelectField field="Modified_LICENSE_TERM_START_DATE" selected="True" />
+                <SelectField field="Modified_LICENSE_TERM_EXPIRATION_DATE" selected="True" />
+                <SelectField field="Modified_LICENSE_APPROVED_FOR_ISSUANCE" selected="True" />
+                <SelectField field="Modified_DATE_ISSUED" selected="True" />
+                <SelectField field="Modified_LICENSE_STATUS_CHANGE_DATE" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="36">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="342" y="726" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>APPLICATION CREATED DATE</InputFieldName>
+              <Language>English</Language>
+              <Format>MM/dd/yyyy</Format>
+              <OutputFieldName>Modified_Application_Created_Date</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert APPLICATION CREATED DATE From:
+MM/dd/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="37">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="438" y="726" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>PAYMENT DATE</InputFieldName>
+              <Language>English</Language>
+              <Format>MM/dd/yyyy</Format>
+              <OutputFieldName>Modified_PAYMENT_DATE</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert PAYMENT DATE From:
+MM/dd/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="38">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="534" y="726" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>LICENSE TERM START DATE</InputFieldName>
+              <Language>English</Language>
+              <Format>MM/dd/yyyy</Format>
+              <OutputFieldName>Modified_LICENSE_TERM_START_DATE</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert LICENSE TERM START DATE From:
+MM/dd/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="630" y="726" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>LICENSE TERM EXPIRATION DATE</InputFieldName>
+              <Language>English</Language>
+              <Format>MM/dd/yyyy</Format>
+              <OutputFieldName>Modified_LICENSE_TERM_EXPIRATION_DATE</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert LICENSE TERM EXPIRATION DATE From:
+MM/dd/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="726" y="726" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>LICENSE APPROVED FOR ISSUANCE</InputFieldName>
+              <Language>English</Language>
+              <Format>MM/dd/yyyy</Format>
+              <OutputFieldName>Modified_LICENSE_APPROVED_FOR_ISSUANCE</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert LICENSE APPROVED FOR ISSUANCE From:
+MM/dd/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="822" y="726" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>DATE ISSUED</InputFieldName>
+              <Language>English</Language>
+              <Format>MM/dd/yyyy</Format>
+              <OutputFieldName>Modified_DATE_ISSUED</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert DATE ISSUED From:
+MM/dd/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DateTime.DateTime">
+            <Position x="918" y="726" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <IsFrom value="False" />
+              <InputFieldName>LICENSE STATUS CHANGE DATE</InputFieldName>
+              <Language>English</Language>
+              <Format>MM/dd/yyyy</Format>
+              <OutputFieldName>Modified_LICENSE_STATUS_CHANGE_DATE</OutputFieldName>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Convert LICENSE STATUS CHANGE DATE From:
+MM/dd/yyyy</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDateTime" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="10" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Reports" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Interactive" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="23" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Reports" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Interactive" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Chicago_FoodInspection_Alteryx</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="be6a8459-c15d-48cf-8d15-b98a3cbe9cd4" />
+      <Telemetry>
+        <PreviousWorkflowId value="3313b29f-27e3-4a60-9a33-4e966908b36a" />
+        <OriginWorkflowId value="d0a6df18-fdea-4ba0-b7d1-d12fa049513b" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
